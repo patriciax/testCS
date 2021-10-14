@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cs-movil,.tablet{
+  display: none;
+}
+.cs-desk img{
+  width: 100%;
+  height: auto;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .cs-movil{
+    display: block;
+  }
+  .cs-movil img{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .cs-desk{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  
+  .tablet{
+    display: block;
+  }
+}
